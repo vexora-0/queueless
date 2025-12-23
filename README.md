@@ -2,7 +2,7 @@
 
 A full-stack React Native application for managing token-based queues and appointments. Users can book tokens remotely and track their turn, while admins can manage services and call tokens efficiently.
 
-## 🚀 Features
+## Features
 
 ### User Features
 - User authentication (Login/Register)
@@ -21,7 +21,7 @@ A full-stack React Native application for managing token-based queues and appoin
 - Complete tokens
 - Filter tokens by status
 
-## 🛠 Tech Stack
+## Tech Stack
 
 ### Frontend
 - React Native (Expo)
@@ -68,7 +68,7 @@ Project/
 └── README.md
 ```
 
-## 🔧 Setup Instructions
+## Setup Instructions
 
 ### Prerequisites
 - Node.js (v14 or higher)
@@ -125,7 +125,7 @@ npm start
 
 5. Scan QR code with Expo Go app or press `a` for Android / `i` for iOS simulator
 
-## 📡 API Endpoints
+## API Endpoints
 
 ### Authentication
 - `POST /api/auth/register` - Register new user
@@ -153,7 +153,7 @@ npm start
 - `POST /api/admin/tokens/:tokenId/skip` - Skip a token
 - `GET /api/admin/dashboard` - Get dashboard stats
 
-## 🗄 Database Models
+## Database Models
 
 ### User
 - name, email, password, role (user/admin)
@@ -164,13 +164,13 @@ npm start
 ### Token
 - tokenNumber, service, user, status, calledAt, completedAt, estimatedWaitTime
 
-## 🔐 Authentication
+## Authentication
 
 - JWT tokens stored in AsyncStorage
 - Protected routes use Bearer token authentication
 - Admin routes require admin role
 
-## 🎯 Key Features Implementation
+## Key Features Implementation
 
 ### Token Generation
 - Sequential token numbers per service
@@ -184,7 +184,7 @@ npm start
 - Polling mechanism for token status updates
 - Refresh controls on all list screens
 
-## 📱 Screenshots
+## Screens
 
 The app includes:
 - Login/Register screens
@@ -195,7 +195,7 @@ The app includes:
 - Service management
 - Token management interface
 
-## 🧪 Testing
+## Testing
 
 ### Initial Setup
 
@@ -226,7 +226,7 @@ This creates:
    - Call, Complete, or Skip tokens
 
 
-## 📝 Notes
+## Notes
 
 - **Admin Creation**: 
   - Use seed script: `npm run seed` (creates admin@queueless.com / admin123)
